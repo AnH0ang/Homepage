@@ -142,6 +142,10 @@ a:hover {
 
 
 @media screen and (max-device-width: 480px) and (orientation: portrait){
+    .body {
+        font-size: 2rem;
+    }
+
     .navigationbar {
         width: auto;
         height: 50px;
@@ -160,6 +164,29 @@ a:hover {
     
     p {
         margin: 2rem 8rem 2rem 8rem;
-        font-size: 1em;
+        font-size: 2.5em;
+    }
+
+    h3 {
+        text-align: center;
+        width: auto;
+        margin: 1rem 10rem;
+    }
+    
+    .item > h3 {
+        text-align: left;
+        font-size: 2rem;
+    }
+    
+    .item {
+        font-size: 2rem;
+    }
+
+    .item > p {
+        font-size: 2rem;
+    }
+
+    .flexcontainer > span {
+        font-size: 1.5rem;
     }
 }
