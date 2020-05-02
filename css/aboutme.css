@@ -1,5 +1,6 @@
 html {
     margin: 0;
+    display: flex;
 }
 body {
     margin: 1rem 1rem 1rem 0rem;
@@ -14,7 +15,7 @@ h3 {
 
 
 .legend {
-    margin: 1rem 1rem 3rem 14.5rem;
+    margin: 1rem 10rem 3rem 9.5rem;
 }
 
 .legend > span {
@@ -27,8 +28,8 @@ h3 {
 .flexcontainer {
     display: flex;
     align-content: flex-start;
-    margin: 0rem 0rem 0rem 14rem;
-    width: 60rem;
+    margin: 0rem 10rem 0rem 9rem;
+    width: auto;
     flex-wrap: wrap;
 }
 
@@ -97,10 +98,10 @@ p {
 }
 
 .item > p {
-    margin: 0rem 0rem 0rem 15rem;
+    margin: 0rem 10rem 0rem 10rem;
 }
 .item > h3 {
-    margin: 0rem 0rem 0rem 15rem;
+    margin: 0rem 10rem 0rem 10rem;
     font-size: 1.3rem;
 }
 
@@ -110,11 +111,11 @@ p {
     
 
 .item > h4 {
-    margin: 0rem 0rem 0rem 15rem;
+    margin: 0rem 10rem 0rem 10rem;
 }
 
 .item > ul {
-    margin: 0rem 0rem 0rem 15rem;
+    margin: 0rem 10rem 0rem 10rem;
 }
 
 .item > p {
@@ -137,4 +138,28 @@ span.beginner{
 
 a:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .navigationbar {
+        width: auto;
+        height: 50px;
+        z-index: 100;
+        margin: 0 7% 0 7%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .navigationbar > a {
+        font-size: 3rem;
+        margin: 1rem;
+        color: black;
+    }
+    
+    p {
+        margin: 2rem 8rem 2rem 8rem;
+        font-size: 1em;
+    }
 }
