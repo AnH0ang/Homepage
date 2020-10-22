@@ -6,5 +6,4 @@ all:
 	done < ./doc_list.txt
 
 deploy:
-	aws s3 rm s3://anhoang.xyz --recursive
-	aws s3 cp . s3://anhoang.xyz --recursive --exclude=".git/*"
+	aws s3 sync . s3://anhoang.xyz --exclude=".git/*"
